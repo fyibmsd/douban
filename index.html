@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>图书搜索</title>
+	<link rel="stylesheet" href="./dist/app.css">
+</head>
+<body>
+	<div class="main">
+		<h1>图书搜索</h1>
+		<input id="isbn" type="text" placeholder="请输入ISBN">
+		<button id="search">搜索</button>
+		<div id="view"></div>
+	</div>
+	<script src = "./dist/laytpl.js"></script>
+	<script src = './dist/app.js'></script>
+	<script id="tpl" type="text/html">
+		<h2> {{ d.title }}</h2>
+		<h3> 副标题：{{ d.subtitle }}</h3>
+		<h3> 作者： {{ d.author }} </h3>
+		<img src="{{ d.image }}" alt="点击查看"/>
+		<p><a target="_blank" href="{{ d.alt }}">点击查看</a></p>
+		<p> 出版社： {{ d.publisher }}</p>
+		<p> ISBN： {{ d.isbn13 }}</p>
+	</script>
+</body>
+</html>
