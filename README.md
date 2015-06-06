@@ -4,4 +4,4 @@
 
 > 利用doubanAPI，和Js模版引擎
 
-> 演示页：http://fyibmsd.com/book
+> 演示页：http://book.fyibmsd.com/search
